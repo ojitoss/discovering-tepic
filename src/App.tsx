@@ -1,6 +1,7 @@
 import PLACES_INFO from './places_info.json'
 import { type PlaceInfo  } from '../types.d'
 import { useState } from 'react'
+import './App.css'
 
 const places_info = PLACES_INFO as Record<string, PlaceInfo>
 
@@ -12,7 +13,12 @@ function App() {
 
   return (
     <>
-     <h1>Discovering Tepicyork</h1>
+     <div className='title'>
+      <h1>
+        <span>Discovering</span>
+        <span>Tepic</span>
+      </h1>
+    </div>
 
       <button onClick={()=> setCount(count + 1)}>
         Click to save one tepicyano

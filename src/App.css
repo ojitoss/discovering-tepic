@@ -1,0 +1,29 @@
+.title {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXqsJ6VV07SWFd5M3w1eOKBWzWjs3zv4aWw14Kp4qdaOLcwC8OsejHRw&s=10");
+  padding: 150px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 80%;
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    
+    span {
+      margin: 20px;
+    }
+
+    span:nth-of-type(1) {
+      font-size: 50px;
+    }
+    
+    span:nth-of-type(2) {
+      font-size: 90px;
+      font-weight: bold;
+    }
+  }
+} 
