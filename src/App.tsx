@@ -17,7 +17,10 @@ function App() {
 
       Tepicyanos saved: {count}
 
-      <select value={place} onChange={e => setPlace(e.target.value)}>
+      <select 
+        style={{ padding: 30, fontSize: 30  }}
+        value={place}  
+        onChange={e => setPlace(e.target.value)}>
         <option>Tepic</option>
         <option>El centro</option>
       </select>
