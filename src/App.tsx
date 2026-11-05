@@ -4,9 +4,10 @@ import { useState } from 'react'
 import './App.css'
 
 const places_info = PLACES_INFO as Record<string, PlaceInfo>
+const NAV_BAR_SECTIONS = ['Inicio', 'Hola', 'Adios']
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedIndex, setSelectedIndex] = useState(0)
   const [place, setPlace] = useState('Tepic')
 
   const places_names = Object.keys(places_info)
@@ -15,9 +16,15 @@ function App() {
     <>
     <div className='title-section'>
       <nav>
-        <span className='selected'>Inico</span>
-        <span>Hola</span>
-        <span>Adios</span>
+        {NAV_BAR_SECTIONS.map((section, i)=> (
+          <span
+              key={i}
+              className={selectedIndex === i ? 'selected' : ''}
+              onClick={()=> setSelectedIndex(i)}
+            >
+              {section}
+            </span>
+        ))}
       </nav>
       <div className='title'>
         <h1>
@@ -26,12 +33,6 @@ function App() {
         </h1>
       </div>
      </div>
-
-      <button onClick={()=> setCount(count + 1)}>
-        Click to save one tepicyano
-      </button>
-
-      Tepicyanos saved: {count}
 
       <select 
         style={{ padding: 30, fontSize: 30  }}
