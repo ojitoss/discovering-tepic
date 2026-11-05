@@ -5,6 +5,7 @@ const CENTRO_IFRAME_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
 
 function App() {
   const [count, setCount] = useState(0)
+  const [place, setPlace] = useState('Tepic')
 
   return (
     <>
@@ -16,21 +17,17 @@ function App() {
 
       Tepicyanos saved: {count}
 
+      <select value={place} onChange={e => setPlace(e.target.value)}>
+        <option>Tepic</option>
+        <option>El centro</option>
+      </select>
+
       <iframe
-        src={TEPIC_IFRAME_URL} 
+        src={place === "Tepic" ? TEPIC_IFRAME_URL : CENTRO_IFRAME_URL} 
         width="600" 
         height="450"
         style={{ border: 0 }}  
         loading="lazy" 
-        allowFullScreen
-        ></iframe>
-
-       <iframe
-        src={CENTRO_IFRAME_URL}
-        width="600"
-        height="450"
-        style={{ border: 0 }}
-        loading="lazy"
         allowFullScreen
       ></iframe>
     </>
