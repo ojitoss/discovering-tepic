@@ -26,12 +26,7 @@ function App() {
             </span>
         ))}
       </nav>
-      <div className='title'>
-        <h1>
-          <span>Discovering</span>
-          <span>Tepic</span>
-        </h1>
-      </div>
+      <h1>Discovering</h1>
      </div>
 
       <select 
