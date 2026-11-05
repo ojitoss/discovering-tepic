@@ -13,12 +13,19 @@ function App() {
 
   return (
     <>
-     <div className='title'>
-      <h1>
-        <span>Discovering</span>
-        <span>Tepic</span>
-      </h1>
-    </div>
+    <div className='title-section'>
+      <nav>
+        <span className='selected'>Inico</span>
+        <span>Hola</span>
+        <span>Adios</span>
+      </nav>
+      <div className='title'>
+        <h1>
+          <span>Discovering</span>
+          <span>Tepic</span>
+        </h1>
+      </div>
+     </div>
 
       <button onClick={()=> setCount(count + 1)}>
         Click to save one tepicyano
