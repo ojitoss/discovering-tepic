@@ -7,6 +7,8 @@ function App() {
 
   const places_names = Object.keys(zone_info)
 
+  console.log(zone_info)
+
   return (
     <>
      <h1>Discovering Tepicyork</h1>
@@ -25,7 +27,7 @@ function App() {
       </select>
 
       <iframe
-        src={zone_info.google_maps_url[place]} 
+        src={zone_info[place].google_maps_url} 
         width="600" 
         height="450"
         style={{ border: 0 }}  
