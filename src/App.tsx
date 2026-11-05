@@ -3,14 +3,12 @@ import { type PlaceInfo  } from '../types.d'
 import { useState } from 'react'
 import './App.css'
 
-const places_info = PLACES_INFO as Record<string, PlaceInfo>
+const places_info = PLACES_INFO as PlaceInfo[]
 const NAV_BAR_SECTIONS = ['Inicio', 'Hola', 'Adios']
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [place, setPlace] = useState('Tepic')
-
-  const places_names = Object.keys(places_info)
 
   return (
     <>
@@ -33,11 +31,11 @@ function App() {
         style={{ padding: 30, fontSize: 30  }}
         value={place}  
         onChange={e => setPlace(e.target.value)}>
-        {places_names.map(place_name => <option>{place_name}</option>)}
+        {places_info.map(place => <option>{place.name}</option>)}
       </select>
 
       <iframe
-        src={places_info[place].google_maps_url} 
+        src={places_info.find(place_info => place_info.name === place).google_maps_url} 
         width="600" 
         height="450"
         style={{ border: 0 }}  
