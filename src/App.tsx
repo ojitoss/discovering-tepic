@@ -1,13 +1,11 @@
-import zone_info from './zone_info.json'
+import places_info from './places_info.json'
 import { useState } from 'react'
 
 function App() {
   const [count, setCount] = useState(0)
   const [place, setPlace] = useState('Tepic')
 
-  const places_names = Object.keys(zone_info)
-
-  console.log(zone_info)
+  const places_names = Object.keys(places_info)
 
   return (
     <>
@@ -27,7 +25,7 @@ function App() {
       </select>
 
       <iframe
-        src={zone_info[place].google_maps_url} 
+        src={places_info[place].google_maps_url} 
         width="600" 
         height="450"
         style={{ border: 0 }}  
