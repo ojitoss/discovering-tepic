@@ -1,5 +1,8 @@
-import places_info from './places_info.json'
+import PLACES_INFO from './places_info.json'
+import { type PlaceInfo  } from '../types.d'
 import { useState } from 'react'
+
+const places_info = PLACES_INFO as Record<string, PlaceInfo>
 
 function App() {
   const [count, setCount] = useState(0)
