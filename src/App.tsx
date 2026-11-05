@@ -1,6 +1,7 @@
 import PLACES_INFO from './places_info.json'
 import { type PlaceInfo  } from '../types.d'
 import { useState } from 'react'
+import { GoogleMaps  } from './components/GoogleMaps'
 import './App.css'
 
 const places_info = PLACES_INFO as PlaceInfo[]
@@ -34,14 +35,9 @@ function App() {
         {places_info.map(place => <option>{place.name}</option>)}
       </select>
 
-      <iframe
-        src={places_info.find(place_info => place_info.name === place).google_maps_url} 
-        width="600" 
-        height="450"
-        style={{ border: 0 }}  
-        loading="lazy" 
-        allowFullScreen
-      ></iframe>
+      <GoogleMaps
+        url={places_info.find(place_info => place_info.name === place).google_maps_url}
+      />
     </>
   )
 }
