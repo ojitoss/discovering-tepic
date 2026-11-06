@@ -1,5 +1,5 @@
 import PLACES_INFO from './places_info.json'
-import { type PlaceInfo  } from '../types.d'
+import { type PlaceInfo, type PlaceType  } from '../types.d'
 import { useState } from 'react'
 import { GoogleMaps  } from './components/GoogleMaps'
 import './App.css'
@@ -13,11 +13,11 @@ const place_index = places_info.reduce((acc, cur, i)=> {
   acc[cur.name] = i
 
   return acc
-}, {})
+}, {}) 
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
-  const [place, setPlace] = useState('Centro')
+  const [place, setPlace] = useState<PlaceType>('Centro')
 
   return (
     <>
@@ -42,7 +42,7 @@ function App() {
       <select 
         style={{ padding: 30, fontSize: 30  }}
         value={place}  
-        onChange={e => setPlace(e.target.value)}>
+        onChange={e => setPlace(e.target.value as PlaceType)}>
         {places_info.map(place => <option>{place.name}</option>)}
       </select>
 
