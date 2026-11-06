@@ -7,6 +7,12 @@ import './App.css'
 const places_info = PLACES_INFO as PlaceInfo[]
 const NAV_BAR_SECTIONS = ['Inicio', 'Hola', 'Adios']
 
+const place_index = places_info.reduce((acc, cur, i)=> {
+  acc[cur.name] = i
+
+  return acc
+}, {})
+
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [place, setPlace] = useState('Tepic')
@@ -36,7 +42,7 @@ function App() {
       </select>
 
       <GoogleMaps
-        url={places_info.find(place_info => place_info.name === place).google_maps_url}
+        url={places_info[place_index[place]].google_maps_url}
       />
     </>
   )
