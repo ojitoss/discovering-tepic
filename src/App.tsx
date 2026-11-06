@@ -49,6 +49,26 @@ function App() {
       <GoogleMaps
         url={places_info[place_index[place]].google_maps_url}
       />
+
+      <div 
+       style={{
+         display: 'grid',
+         gridTemplateColumns: 'repeat(3, 1fr)',
+         gap: 10
+       }}
+       >
+        {places_info.map((place_info, i)  => (
+          <span 
+            key={i}
+            style={{
+              background: 'white',
+              fontSize: 40,
+              padding: 15
+            }}>
+              {place_info.name}
+          </span>
+        ))}
+       </div>
     </>
   )
 }
