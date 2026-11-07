@@ -37,7 +37,9 @@ function App() {
       <h1>Discovering</h1>
      </div>
 
-     <GoogleMaps url={TEPIC_URL} />
+     <div className='tepic-map'>
+      <GoogleMaps url={TEPIC_URL} />
+    </div>
 
       <select 
         style={{ padding: 30, fontSize: 30  }}
