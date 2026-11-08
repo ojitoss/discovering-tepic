@@ -31,7 +31,7 @@ function App() {
 
       <h1>
         <span>Discovering</span>
-        <img src='https://visitatepic.com/VisitaTepicW.png'/>
+        <img src='./assets/Tepic-logo.png'/>
       </h1>
      </div>
 
