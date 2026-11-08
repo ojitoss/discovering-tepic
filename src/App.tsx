@@ -29,7 +29,10 @@ function App() {
         ))}
       </nav>
 
-      <h1>Discovering</h1>
+      <h1>
+        <span>Discovering</span>
+        <img src='https://visitatepic.com/VisitaTepicW.png'/>
+      </h1>
      </div>
 
      <div className='tepic-map'>

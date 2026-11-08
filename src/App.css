@@ -1,9 +1,8 @@
 .title-section {
+  height: 100vh;
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.6) 100%),
-    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXqsJ6VV07SWFd5M3w1eOKBWzWjs3zv4aWw14Kp4qdaOLcwC8OsejHRw&s=10");
-  padding-bottom: 500px;
+    linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),
+    url("https://tse3.mm.bing.net/th/id/OIP.WM9PogW78MxCn8F7mPAiwQHaEo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 75%;
@@ -24,8 +23,18 @@
   }
 
   h1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     font-size: 90px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 512;
+      width: 200;
+    }
   }
 
   .tepic-map {
