@@ -1,13 +1,10 @@
-import PLACES_INFO from './places_info.json'
-import { type PlaceInfo, type PlaceType  } from '../types.d'
+import { PLACES_INFO, NAV_BAR_SECTIONS, TEPIC_URL } from '../constants'
+import { type PlaceType  } from '../types.d'
 import { useState } from 'react'
 import { GoogleMaps  } from './components/GoogleMaps'
-import { NAV_BAR_SECTIONS, TEPIC_URL } from '../constants'
 import './App.css'
 
-const places_info = PLACES_INFO as PlaceInfo[]
-
-const place_index = places_info.reduce((acc, cur, i)=> {
+const place_index = PLACES_INFO.reduce((acc, cur, i)=> {
   acc[cur.name] = i
 
   return acc
@@ -43,11 +40,11 @@ function App() {
         style={{ padding: 30, fontSize: 30  }}
         value={place}  
         onChange={e => setPlace(e.target.value as PlaceType)}>
-        {places_info.map(place => <option>{place.name}</option>)}
+        {PLACES_INFO.map(place => <option>{place.name}</option>)}
       </select>
 
       <GoogleMaps
-        url={places_info[place_index[place]].google_maps_url}
+        url={PLACES_INFO[place_index[place]].google_maps_url}
       />
 
       <div 
@@ -57,7 +54,7 @@ function App() {
          gap: 10
        }}
        >
-        {places_info.map((place_info, i)  => (
+        {PLACES_INFO.map((place_info, i)  => (
           <span 
             key={i}
             style={{
