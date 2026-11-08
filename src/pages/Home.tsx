@@ -30,7 +30,9 @@ function App() {
                 style={{ padding: 30, fontSize: 30  }}
                 value={place}  
                 onChange={e => setPlace(e.target.value as PlaceType)}>
-                {PLACES_INFO.map(place => <option>{place.name}</option>)}
+                    {PLACES_INFO.map((place, i) => (
+                        <option key={i}>{place.name}</option>)
+                    )}
             </select>
 
             <GoogleMaps
