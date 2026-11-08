@@ -4,11 +4,11 @@ import { useState } from 'react'
 import { GoogleMaps  } from './components/GoogleMaps'
 import './App.css'
 
-const place_index = PLACES_INFO.reduce((acc, cur, i)=> {
-  acc[cur.name] = i
+const places_indexes = PLACES_INFO.reduce<Record<PlaceType, number>>((acc, curr, i)=> {
+  acc[curr.name] = i
 
   return acc
-}, {}) 
+}, {} as Record<PlaceType, number>) 
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -51,7 +51,7 @@ function App() {
       </select>
 
       <GoogleMaps
-        url={PLACES_INFO[place_index[place]].google_maps_url}
+        url={PLACES_INFO[places_indexes[place]].google_maps_url}
       />
 
       <div 

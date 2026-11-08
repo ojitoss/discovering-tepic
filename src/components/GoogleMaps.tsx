@@ -2,7 +2,7 @@ interface Props {
   url: string
 }
 
-export function GoogleMaps({ url }: Props) {
+export const GoogleMaps: React.FC<Props> = ({ url })=> {
   return (
     <iframe
       src={url}
