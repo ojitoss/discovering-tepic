@@ -3,27 +3,28 @@
     linear-gradient(rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.6) 100%),
     url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXqsJ6VV07SWFd5M3w1eOKBWzWjs3zv4aWw14Kp4qdaOLcwC8OsejHRw&s=10");
-  padding-bottom: 400px;
+  padding-bottom: 500px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 120% 120%;
+  background-position: 0% 75%;
 
   nav {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    font-size: 50px;
+    font-size: 30px;
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    color: #fbfafa;
+    padding: 15px;
+    color: #b9b3b3;
 
     .selected {
       font-weight: bold;
+      color: #eee3e3;
     }
   }
 
   h1 {
-    font-size: 80px;
+    font-size: 90px;
     font-weight: bold;
   }
 
