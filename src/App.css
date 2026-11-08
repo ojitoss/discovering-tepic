@@ -7,44 +7,6 @@
   background-size: 100%;
   background-position: 0% 75%;
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 60%;
-    font-size: 30px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    color: #b9b3b3;
-
-    .selected {
-      font-weight: bold;
-      color: #eee3e3;
-      background: rgba(15, 2, 77, 0.7);
-      border-radius: 10px;
-    }
-
-    div {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-    }
-
-    span {
-      padding: 10px;
-      padding-bottom: 15px;
-    }
-
-    span:hover {
-      background: rgba(15, 2, 77, 0.7);
-      border-radius: 10px;
-    }
-
-    img {
-      height: 60px;
-      width: 160px;
-    }
-  }
-
   h1 {
     height: 100%;
     display: flex;
@@ -60,10 +22,52 @@
       width: 200;
     }
   }
+}
 
-  .tepic-map {
+.tepic-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 60%;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #b9b3b3;
+
+  .selected {
+    font-weight: bold;
+    color: #eee3e3;
+    background: rgba(15, 2, 77, 0.7);
+    border-radius: 10px;
+  }
+
+  div {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .link {
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+
+  .link:hover {
+    background: rgba(15, 2, 77, 0.7);
+    border-radius: 10px;
+  }
+
+  img {
+    height: 60px;
+    width: 160px;
   }
 }
