@@ -18,15 +18,19 @@ function App() {
     <>
     <div className='title-section'>
       <nav>
-        {NAV_BAR_SECTIONS.map((section, i)=> (
-          <span
-              key={i}
-              className={selectedIndex === i ? 'selected' : ''}
-              onClick={()=> setSelectedIndex(i)}
-            >
-              {section}
-            </span>
-        ))}
+        
+        <img src="../assets/Tepic-logo.png" />
+        <div>
+          {NAV_BAR_SECTIONS.map((section, i)=> (
+            <span
+                key={i}
+                className={selectedIndex === i ? 'selected' : ''}
+                onClick={()=> setSelectedIndex(i)}
+              >
+                {section}
+              </span>
+          ))}
+        </div>
       </nav>
 
       <h1>

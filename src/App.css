@@ -10,7 +10,7 @@
   nav {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 60%;
     font-size: 30px;
     background: rgba(0, 0, 0, 0.5);
     padding: 15px;
@@ -19,6 +19,29 @@
     .selected {
       font-weight: bold;
       color: #eee3e3;
+      background: rgba(15, 2, 77, 0.7);
+      border-radius: 10px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    span {
+      padding: 10px;
+      padding-bottom: 15px;
+    }
+
+    span:hover {
+      background: rgba(15, 2, 77, 0.7);
+      border-radius: 10px;
+    }
+
+    img {
+      height: 60px;
+      width: 160px;
     }
   }
 
