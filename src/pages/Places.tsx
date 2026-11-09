@@ -24,11 +24,11 @@ function Places() {
                   type='checkbox' 
                   checked={categories.includes(category_filter)}
                   onChange={e => {
-                    if (e.target.checked) {
-                      setCategories(categories => [...categories, category_filter])
-                    } else {
-                      setCategories(categories => categories.filter(x => x !== category_filter))
-                    }
+                    const newState = e.target.checked 
+                      ? [...categories, category_filter]
+                      : categories.filter(x => x !== category_filter)
+
+                    setCategories(newState)
                   }}
                 />
               </div>
