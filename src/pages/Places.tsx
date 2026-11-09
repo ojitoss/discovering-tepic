@@ -1,4 +1,5 @@
 import { PLACES_INFO  } from '../../constants'
+import { Link } from 'react-router'
 import './Places.css'
 
 function Places() {
@@ -9,12 +10,13 @@ function Places() {
         <div className='container'>
           {PLACES_INFO.map((place_info, i) => {
             return (
-              <span
-              className='place'
+              <Link
+                to={`/place/${place_info.name}`}
+                className='place'
                 key={i}  
               >
                 {place_info.name}
-              </span>
+              </Link>
             )
           })}
         </div>

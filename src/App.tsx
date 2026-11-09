@@ -5,6 +5,7 @@ import { NAV_BAR_SECTIONS } from '../constants'
 
 import Home from './pages/Home'
 import Places from './pages/Places'
+import SpecificPlace from './pages/SpecificPlace'
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path='/' element={< Home/>} />
         <Route path='/places' element={< Places/>} />
+        <Route path='/place/:place' element={< SpecificPlace />} />
       </Routes>
     </BrowserRouter>
   )
