@@ -6,9 +6,24 @@ h1 {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.places {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 30px;
 }
 
 .place {
