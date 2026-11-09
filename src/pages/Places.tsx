@@ -2,25 +2,18 @@ import { PLACES_INFO  } from '../../constants'
 import { type PlaceCategory } from '../../types.d'
 import { Link } from 'react-router'
 import './Places.css'
-import {useEffect, useState} from 'react'
+import {  useState } from 'react'
 
 const CATEGORY_FILTERS: PlaceCategory[] = ['Location', 'Cerro', 'Laguna']
 
 function Places() {
   const [categories, setCategories] = useState([...CATEGORY_FILTERS])
-  const [places, setPlaces] = useState([...PLACES_INFO])
 
-  useEffect(()=> {
-    console.log('a')
-    setPlaces(PLACES_INFO.filter(place => categories.includes(place.category)))
-    console.log(places)
-  }, [categories])
-
-  console.log(categories)
+  const places = PLACES_INFO.filter(place => categories.includes(place.category))
 
   return (
       <>
-        <h1>Places to visiit in Tepicyork</h1>
+        <h1>Places to visit in Tepicyork</h1>
 
         <div className='container'>
           <div className='categories'>
