@@ -2,11 +2,21 @@ import { PLACES_INFO  } from '../../constants'
 import { type PlaceCategory } from '../../types.d'
 import { Link } from 'react-router'
 import './Places.css'
+import {useEffect, useState} from 'react'
 
 const CATEGORY_FILTERS: PlaceCategory[] = ['Location', 'Cerro', 'Laguna']
 
 function Places() {
-    return (
+  const [categories, setCategories] = useState([...CATEGORY_FILTERS])
+  const [places, setPlaces] = useState([...PLACES_INFO])
+
+  useEffect(()=> {
+    setPlaces(places => places.filter(place => categories.includes(place.category)))
+  }, [categories])
+
+  console.log(categories)
+
+  return (
       <>
         <h1>Places to visiit in Tepicyork</h1>
 
@@ -15,19 +25,29 @@ function Places() {
             {CATEGORY_FILTERS.map((category_filter, i)=> (
               <div key={i}>
                 {category_filter}
-                <input type='checkbox' checked />
+                <input 
+                  type='checkbox' 
+                  checked={categories.includes(category_filter)}
+                  onChange={e => {
+                    if (e.target.checked) {
+                      setCategories(categories => categories.push(category_filter))
+                    } else {
+                      setCategories(categories => categories.filter(x => x !== category_filter))
+                    }
+                  }}
+                />
               </div>
             ))}
           </div>
           <div className='places'>
-            {PLACES_INFO.map((place_info, i) => {
+            {places.map((place, i) => {
               return (
                 <Link
-                  to={`/place/${place_info.name}`}
+                  to={`/place/${place.name}`}
                   className='place'
                   key={i}  
                 >
-                  {place_info.name}
+                  {place.name}
                 </Link>
               )
             })}
