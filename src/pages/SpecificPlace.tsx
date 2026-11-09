@@ -1,6 +1,7 @@
-import { useParams  } from 'react-router'
+import { Link, useParams  } from 'react-router'
 import { PLACES_INFO  } from '../../constants'
 import { GoogleMaps } from '../components/GoogleMaps'
+import './SpecificPlace.css'
 
 function SpecificPlace() {
   const { place } = useParams()
@@ -10,7 +11,13 @@ function SpecificPlace() {
   return (
     <>
       <div style={{ marginBottom: 100  }}></div>
-      <GoogleMaps url={place_.google_maps_url} />
+      {place_ !== undefined ?
+        <GoogleMaps url={place_.google_maps_url} />
+        : <div className='invalid-place'>
+           <span>'{place}'</span> is not a valid place to found
+           <Link to='/places' className='link'>Click here to see places that you can visit in Tepic</Link>
+          </div>
+      }
     </>
   )
 }
