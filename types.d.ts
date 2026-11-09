@@ -5,7 +5,13 @@ export type PlaceType =
   | 'Zitacua'
   | 'Laguna de Mora'
 
+export type PlaceCategory = 
+  'Location'
+  | 'Cerro'
+  | 'Laguna'
+
 export interface PlaceInfo {
   name: PlaceType
+  category: PlaceCategory
   google_maps_url: string
 }
