@@ -11,7 +11,9 @@ function Places() {
   const [places, setPlaces] = useState([...PLACES_INFO])
 
   useEffect(()=> {
-    setPlaces(places => places.filter(place => categories.includes(place.category)))
+    console.log('a')
+    setPlaces(PLACES_INFO.filter(place => categories.includes(place.category)))
+    console.log(places)
   }, [categories])
 
   console.log(categories)
@@ -25,12 +27,12 @@ function Places() {
             {CATEGORY_FILTERS.map((category_filter, i)=> (
               <div key={i}>
                 {category_filter}
-                <input 
+                <input
                   type='checkbox' 
                   checked={categories.includes(category_filter)}
                   onChange={e => {
                     if (e.target.checked) {
-                      setCategories(categories => categories.push(category_filter))
+                      setCategories(categories => [...categories, category_filter])
                     } else {
                       setCategories(categories => categories.filter(x => x !== category_filter))
                     }
