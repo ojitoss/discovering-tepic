@@ -12,7 +12,10 @@ function SpecificPlace() {
     <>
       <div style={{ marginBottom: 100  }}></div>
       {place_ !== undefined ?
-        <GoogleMaps url={place_.google_maps_url} />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center', justifyContent: 'center' }}>
+          <img src={place_.main_image} width='600' height='200' />
+          <GoogleMaps url={place_.google_maps_url} />
+        </div>
         : <div className='invalid-place'>
            <span>'{place}'</span> is not a valid place to found
            <Link to='/places' className='link'>Click here to see places that you can visit in Tepic</Link>

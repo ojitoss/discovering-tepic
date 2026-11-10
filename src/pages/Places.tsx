@@ -42,6 +42,7 @@ function Places() {
                   className='place'
                   key={i}  
                 >
+                  <img src={place.main_image} />
                   {place.name}
                 </Link>
               )

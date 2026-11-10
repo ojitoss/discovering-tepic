@@ -27,11 +27,20 @@ h1 {
 }
 
 .place {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fcfcfc;
   color: #000;
   border-radius: 5px;
-  font-size: 35px;
+  font-size: 30px;
   padding: 8px;
   text-decoration: none;
   font-weight: bold;
+
+  img {
+    height: 100px;
+    width: 200px;
+  }
 }
