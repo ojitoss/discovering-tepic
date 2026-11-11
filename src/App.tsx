@@ -21,11 +21,11 @@ function App() {
           {NAV_BAR_SECTIONS.map((section, i)=> (
             <Link
                 key={i}
-                to={'/' + (section === 'Home' ? '' : section.toLocaleLowerCase())}
+                to={section.path}
                 className={'link ' + (selectedIndex === i ? 'selected' : '')}
                 onClick={()=> setSelectedIndex(i)}
               >
-                {section}
+                {section.title}
               </Link>
           ))}
         </div>
