@@ -4,11 +4,14 @@ export type PlaceType =
   | 'Cerro de San Juan'
   | 'Zitacua'
   | 'Laguna de Mora'
+  | 'Cinco Pueblos Casa De Artesanias'
+  | 'Museo Regional de Nayarit'
 
 export type PlaceCategory = 
-  'Location'
+  'Locations'
   | 'Cerro'
   | 'Laguna'
+  | 'Museums'
 
 export interface PlaceInfo {
   name: PlaceType

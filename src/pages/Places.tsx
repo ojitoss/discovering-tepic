@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 import './Places.css'
 import {  useState } from 'react'
 
-const CATEGORY_FILTERS: PlaceCategory[] = ['Location', 'Cerro', 'Laguna']
+const CATEGORY_FILTERS: PlaceCategory[] = ['Locations', 'Cerro', 'Laguna', 'Museums']
 
 function Places() {
   const [categories, setCategories] = useState([...CATEGORY_FILTERS])
