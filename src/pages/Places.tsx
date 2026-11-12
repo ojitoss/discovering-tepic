@@ -14,16 +14,18 @@ function Places() {
           {CATEGORY_FILTERS.map(category => (
             <>
               <h3>{category}:</h3>
-              {PLACES_INFO.filter((_, i)=> CATEGORY_INDEXES[category].includes(i)).map((place, i) => (
-                <Link
-                  to={`/place/${place.name}`}
-                  className='place'
-                  key={i} 
-                >
-                  <img src={place.main_image} />
-                  {place.name}
-                </Link>
-              ))}
+              <div className="places">
+                {PLACES_INFO.filter((_, i)=> CATEGORY_INDEXES[category].includes(i)).map((place, i) => (
+                  <Link
+                    to={`/place/${place.name}`}
+                    className='place'
+                    key={i} 
+                  >
+                    <img src={place.main_image} />
+                    {place.name}
+                  </Link>
+                ))}
+              </div>
             </>
           ))}
         </div>

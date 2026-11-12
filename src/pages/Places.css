@@ -11,11 +11,17 @@ h1 {
   gap: 10px;
   justify-content: center;
   align-items: center;
+
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fcfcfc;
+  }
 }
 
 .places {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
