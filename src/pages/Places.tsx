@@ -1,4 +1,4 @@
-import { PLACES_INFO, CATEGORY_INDEXES  } from '../../constants'
+import { PLACES_INFO, CATEGORIES_INFO  } from '../../constants'
 import { type PlaceCategory } from '../../types.d'
 import { Link } from 'react-router'
 import './Places.css'
@@ -14,9 +14,9 @@ function Places() {
           {CATEGORY_FILTERS.map(category => (
             <>
               <h3>{category}:</h3>
-              <span>{CATEGORY_INDEXES[category].description}</span>
+              <span>{CATEGORIES_INFO[category].description}</span>
               <div className="places">
-                {PLACES_INFO.filter((_, i)=> CATEGORY_INDEXES[category].places_info_indexes.includes(i)).map((place, i) => (
+                {PLACES_INFO.filter((_, i)=> CATEGORIES_INFO[category].places_info_indexes.includes(i)).map((place, i) => (
                   <Link
                     to={`/place/${place.name}`}
                     className='place'

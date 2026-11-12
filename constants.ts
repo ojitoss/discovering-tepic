@@ -63,7 +63,7 @@ interface CategoryInfo {
   description: string
 }
 
-export const CATEGORY_INDEXES: Record<PlaceCategory, CategoryInfo> = {
+export const CATEGORIES_INFO: Record<PlaceCategory, CategoryInfo> = {
   Locations: { 
     places_info_indexes: [0, 3],
     description: 'In Tepicyork we have many locations like the Centro'
