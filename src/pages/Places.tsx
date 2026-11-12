@@ -14,6 +14,7 @@ function Places() {
           {CATEGORY_FILTERS.map(category => (
             <>
               <h3>{category}:</h3>
+              <span>{CATEGORY_INDEXES[category].description}</span>
               <div className="places">
                 {PLACES_INFO.filter((_, i)=> CATEGORY_INDEXES[category].places_info_indexes.includes(i)).map((place, i) => (
                   <Link

@@ -66,18 +66,18 @@ interface CategoryInfo {
 export const CATEGORY_INDEXES: Record<PlaceCategory, CategoryInfo> = {
   Locations: { 
     places_info_indexes: [0, 3],
-    description: ''
+    description: 'In Tepicyork we have many locations like the Centro'
   },
   Cerro: {
     places_info_indexes: [1, 2],
-    description: ''
+    description: 'In Tepicyork we have two mains Cerros that you can hike'
   },
   Laguna: {
     places_info_indexes: [4],
-    description: ''
+    description: 'In Tepicyork we have some water'
   },
   Museums: {
     places_info_indexes: [5, 6],
-    description: ''
+    description: 'In Tepicyork we have several museums at Centro'
   }
 }
