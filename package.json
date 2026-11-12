@@ -1,5 +1,6 @@
 {
-  "name": "react-ts",
+  "name": "Discovering Tepic",
+  "homepage": "https://ojitoss.github.io/discovering-tepic",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d Dist"
   },
   "dependencies": {
     "react": "^19.3.1",

@@ -11,7 +11,7 @@ function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/discovering-tepic'>
       <nav>
         <Link to={'/'}>
           <img src="../assets/Tepic-logo.png" />
