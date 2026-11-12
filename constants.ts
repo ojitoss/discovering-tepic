@@ -58,9 +58,26 @@ export const PLACES_INFO: PlaceInfo[] = [
   }
 ]
 
-export const CATEGORY_INDEXES: Record<PlaceCategory, number[]> = {
-  Locations: [0, 3],
-  Cerro: [1, 2],
-  Laguna: [4],
-  Museums: [5, 6]
+interface CategoryInfo {
+  places_info_indexes: number[]
+  description: string
+}
+
+export const CATEGORY_INDEXES: Record<PlaceCategory, CategoryInfo> = {
+  Locations: { 
+    places_info_indexes: [0, 3],
+    description: ''
+  },
+  Cerro: {
+    places_info_indexes: [1, 2],
+    description: ''
+  },
+  Laguna: {
+    places_info_indexes: [4],
+    description: ''
+  },
+  Museums: {
+    places_info_indexes: [5, 6],
+    description: ''
+  }
 }

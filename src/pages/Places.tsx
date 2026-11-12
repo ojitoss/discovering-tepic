@@ -15,7 +15,7 @@ function Places() {
             <>
               <h3>{category}:</h3>
               <div className="places">
-                {PLACES_INFO.filter((_, i)=> CATEGORY_INDEXES[category].includes(i)).map((place, i) => (
+                {PLACES_INFO.filter((_, i)=> CATEGORY_INDEXES[category].places_info_indexes.includes(i)).map((place, i) => (
                   <Link
                     to={`/place/${place.name}`}
                     className='place'
