@@ -8,7 +8,7 @@ function App() {
             <div className='title-section'>
                 <h1>
                     <span>Discovering</span>
-                    <img src='./assets/Tepic-logo.png'/>
+                    <img src={`${import.meta.env.BASE_URL}/Tepic-logo.png`} />
                 </h1>
             </div>
 

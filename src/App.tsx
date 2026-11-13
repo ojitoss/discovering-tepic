@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter basename='/discovering-tepic'>
       <nav>
         <Link to={'/'}>
-          <img src="../assets/Tepic-logo.png" />
+          <img src={`${import.meta.env.BASE_URL}/Tepic-logo.png`} />
         </Link>
 
         <div>
@@ -30,7 +30,7 @@ function App() {
           ))}
         </div>
       </nav>
-
+      ,
       <Routes>
         <Route path='/' element={< Home/>} />
         <Route path='/places' element={< Places/>} />
