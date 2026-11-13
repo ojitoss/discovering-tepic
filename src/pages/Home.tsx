@@ -1,7 +1,7 @@
 import { TEPIC_URL } from '../../constants'
 import { GoogleMaps  } from '../components/GoogleMaps'
 import { Img } from '../components/Img'
-import '../App.css'
+import './Home.css'
 
 function App() {
     return (
