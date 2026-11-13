@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router'
+import { Img  } from './components/Img'
 import { useState } from 'react'
 import './App.css'
 import { NAV_BAR_SECTIONS } from '../constants'
@@ -14,7 +15,7 @@ function App() {
     <BrowserRouter basename='/discovering-tepic'>
       <nav>
         <Link to={'/'}>
-          <img src={`${import.meta.env.BASE_URL}/Tepic-logo.png`} />
+          <Img src='Tepic-logo.png' />
         </Link>
 
         <div>
