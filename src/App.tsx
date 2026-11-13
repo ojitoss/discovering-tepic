@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router'
+import { HashRouter, Routes, Route, Link } from 'react-router'
 import { Img  } from './components/Img'
 import { useState } from 'react'
 import './App.css'
@@ -12,7 +12,7 @@ function App() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   
   return (
-    <BrowserRouter basename='/discovering-tepic'>
+    <HashRouter>
       <nav>
         <Link to={'/'}>
           <Img src='Tepic-logo.png' />
@@ -37,7 +37,7 @@ function App() {
         <Route path='/places' element={< Places/>} />
         <Route path='/place/:place' element={< SpecificPlace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
