@@ -1,0 +1,22 @@
+.title-section {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 75%;
+
+  h1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 80px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 204;
+      width: 561;
+    }
+  }
+}
