@@ -1,6 +1,7 @@
 import { PLACES_INFO, CATEGORIES_INFO  } from '../../constants'
 import { type PlaceCategory } from '../../types.d'
 import { Link } from 'react-router'
+import { ShadowImgBg } from '../components/ShadwoImgBg'
 import './Places.css'
 
 const CATEGORY_FILTERS: PlaceCategory[] = ['Locations', 'Cerro', 'Laguna', 'Museums']
@@ -8,7 +9,9 @@ const CATEGORY_FILTERS: PlaceCategory[] = ['Locations', 'Cerro', 'Laguna', 'Muse
 function Places() {
   return (
       <>
-        <h1>Places to visit in Tepicyork</h1>
+        <ShadowImgBg src='https://th.bing.com/th/id/R.3a61fec27ce00955a67457dfc626c9cf?rik=WmiqnbCuay2XWA&pid=ImgRaw&r=0'>
+          <h1>Places to visit in Tepicyork</h1>
+        </ShadowImgBg>
 
         <div className='container'>
           {CATEGORY_FILTERS.map(category => (
