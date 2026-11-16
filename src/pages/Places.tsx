@@ -14,28 +14,31 @@ function Places() {
         </ShadowImgBg>
 
         <div className='container'>
-          {CATEGORY_FILTERS.map(category => (
-            <>
-              <h3>{category}:</h3>
-              <span>{CATEGORIES_INFO[category].description}</span>
-              <div 
-                style={{ gridTemplateColumns: `repeat(${CATEGORIES_INFO[category].places_info_indexes.length}, 1fr)` }}
-                className="places"
-              >
-                {PLACES_INFO.filter((_, i)=> CATEGORIES_INFO[category].places_info_indexes.includes(i)).map((place, i) => (
-                  <ShadowImgBg src={place.main_image} height='100%'>
-                    <Link
-                      to={`/place/${place.name}`}
-                      className='place'
-                      key={i} 
-                    >
-                        {place.name}
-                    </Link>
-                    </ShadowImgBg>
-                ))}
-              </div>
-            </>
-          ))}
+          {CATEGORY_FILTERS.map(category => {
+            let category_info = CATEGORIES_INFO[category]
+
+            return (
+              <>
+                <h3>{category}:</h3>
+                <span>{category_info.description}</span>
+                <div 
+                  style={{ gridTemplateColumns: `repeat(${category_info.places_info_indexes.length}, 1fr)` }}
+                  className="places"
+                >
+                  {PLACES_INFO.filter((_, i)=> category_info.places_info_indexes.includes(i)).map((place, i) => (
+                    <ShadowImgBg src={place.main_image} height='100%'>
+                      <Link
+                        to={`/place/${place.name}`}
+                        className='place'
+                        key={i} 
+                      >
+                          {place.name}
+                      </Link>
+                      </ShadowImgBg>
+                  ))}
+                </div>
+              </>
+          )})}
         </div>
       </>
     )
