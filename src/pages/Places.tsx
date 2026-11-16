@@ -21,7 +21,7 @@ function Places() {
 
             return (
               <>
-                <h3>{category}:</h3>
+                <h3>{category} <span>({amount_members})</span>:</h3>
                 <span>{category_info.description}</span>
                 <div 
                   style={{ gridTemplateColumns: `repeat(${amount_members}, 1fr)` }}

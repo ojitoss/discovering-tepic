@@ -13,9 +13,13 @@ h1 {
   align-items: center;
 
   h3 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     color: #fcfcfc;
+
+    span {
+      color: #686464;
+    }
   }
 }
 
