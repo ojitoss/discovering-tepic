@@ -20,14 +20,15 @@ function Places() {
               <span>{CATEGORIES_INFO[category].description}</span>
               <div className="places">
                 {PLACES_INFO.filter((_, i)=> CATEGORIES_INFO[category].places_info_indexes.includes(i)).map((place, i) => (
-                  <Link
-                    to={`/place/${place.name}`}
-                    className='place'
-                    key={i} 
-                  >
-                    <img src={place.main_image} />
-                    {place.name}
-                  </Link>
+                  <ShadowImgBg src={place.main_image} height='100%'>
+                    <Link
+                      to={`/place/${place.name}`}
+                      className='place'
+                      key={i} 
+                    >
+                        {place.name}
+                    </Link>
+                    </ShadowImgBg>
                 ))}
               </div>
             </>
