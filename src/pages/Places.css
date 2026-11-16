@@ -31,8 +31,8 @@ h1 {
 .place {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start; 
   color: #e4dede;
   border-radius: 5px;
   font-size: 30px;
@@ -41,4 +41,19 @@ h1 {
   min-height: 350px;
   max-width: 300px;
   max-height: 350px;
+  padding: 16px;
+  gap: 40px;
+
+  button {
+    background: #3e6a9c;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    border: transparent;
+
+    &:hover {
+      background: #2e4c6e;
+      padding: 15px;
+    }
+  }
 }

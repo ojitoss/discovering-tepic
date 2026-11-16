@@ -35,6 +35,8 @@ function Places() {
                         key={i} 
                       >
                         {place.name}
+
+                        <button>See more</button>
                       </Link>
                     </ShadowImgBg>
                   ))}
