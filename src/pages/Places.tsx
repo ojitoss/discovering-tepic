@@ -28,7 +28,7 @@ function Places() {
                   className="places"
                 >
                   {filtered_places.map((place, i) => (
-                    <ShadowImgBg src={place.main_image} height='100%'>
+                    <ShadowImgBg src={place.main_image} height='100%' shadow={7}>
                       <Link
                         to={`/place/${place.name}`}
                         className='place'
