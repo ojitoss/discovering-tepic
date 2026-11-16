@@ -18,7 +18,10 @@ function Places() {
             <>
               <h3>{category}:</h3>
               <span>{CATEGORIES_INFO[category].description}</span>
-              <div className="places">
+              <div 
+                style={{ gridTemplateColumns: `repeat(${CATEGORIES_INFO[category].places_info_indexes.length}, 1fr)` }}
+                className="places"
+              >
                 {PLACES_INFO.filter((_, i)=> CATEGORIES_INFO[category].places_info_indexes.includes(i)).map((place, i) => (
                   <ShadowImgBg src={place.main_image} height='100%'>
                     <Link
