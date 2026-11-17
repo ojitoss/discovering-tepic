@@ -10,14 +10,28 @@ export const Details: React.FC<Props> = ({ title, children })=> {
 
     return (
         <div onClick={()=> setShow(show => !show)}>
+          <div
+            style={{
+              position: 'relative'
+            }}
+          >
+            <div
+              style={{
+                position: 'absolute',
+                fontSize: '40px',
+                fontWeight: 'bold',
+                color: '#f4f4f4'
+              }}
+            >
+              {show ? '>' : 'v'}
+            </div>
             {title}
-            {show 
-                ? 
-                    <>
-                        {children}
-                    </>
-                : <></>
-            }
+          </div>
+
+          {show 
+            ? <>{children}</>
+            : <></>
+          }
         </div>
     )
 }
