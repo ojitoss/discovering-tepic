@@ -31,11 +31,35 @@ function App() {
           ))}
         </div>
       </nav>
+
       <Routes>
         <Route path='/' element={< Home/>} />
         <Route path='/places' element={< Places/>} />
         <Route path='/place/:place' element={< SpecificPlace />} />
       </Routes>
+      
+      <footer>
+        <div className='guide'>
+          <Img src='Tepic-logo.png' />
+          <div>
+            <h5>Guide:</h5>
+            <ul>
+              {NAV_BAR_SECTIONS.map((section, i)=> (
+                <li>
+                  <Link
+                    key={i}
+                    to={section.path}
+                  >
+                    {section.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+          <span>Designed by: UPEN students</span>
+      </footer>
     </HashRouter>
   )
 }

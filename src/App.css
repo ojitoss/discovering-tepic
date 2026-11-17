@@ -39,3 +39,38 @@ nav {
     width: 160px;
   }
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .guide {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+
+      h5 {
+        font-size: 35px;
+        text-decoration: bold;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+
+  span {
+    font-size: 25px;
+  }
+}
