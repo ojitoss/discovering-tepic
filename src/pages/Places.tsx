@@ -2,6 +2,7 @@ import { PLACES_INFO, CATEGORIES_INFO  } from '../../constants'
 import { type PlaceCategory } from '../../types.d'
 import { Link } from 'react-router'
 import { ShadowImgBg } from '../components/ShadwoImgBg'
+import { Details } from '../components/Details'
 import './Places.css'
 
 const CATEGORY_FILTERS: PlaceCategory[] = ['Locations', 'Cerro', 'Laguna', 'Museums']
@@ -20,8 +21,9 @@ function Places() {
             const filtered_places = PLACES_INFO.filter((_, i)=> category_info.places_info_indexes.includes(i))
 
             return (
-              <>
-                <h3>{category} <span>({amount_members})</span>:</h3>
+              <Details 
+                title={<h3>{category} <span>({amount_members})</span>:</h3>}
+              >
                 <span>{category_info.description}</span>
                 <div 
                   style={{ gridTemplateColumns: `repeat(${amount_members}, 1fr)` }}
@@ -41,7 +43,7 @@ function Places() {
                     </ShadowImgBg>
                   ))}
                 </div>
-              </>
+              </Details>
           )})}
         </div>
       </>
