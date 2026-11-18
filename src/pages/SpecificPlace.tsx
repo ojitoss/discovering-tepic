@@ -6,7 +6,7 @@ import './SpecificPlace.css'
 
 function SpecificPlace() {
   const { place } = useParams()
-  console.log(place)
+
   const place_ = PLACES_INFO.find(place_info => place_info.name === place)
 
   return (
@@ -18,6 +18,11 @@ function SpecificPlace() {
           </ShadowImgBg>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center', justifyContent: 'center' }}>
+            <video
+              controls
+              src='https://lorem.video/720p' 
+            ></video>
+
             <GoogleMaps url={place_.google_maps_url} />
           </div>
         </>
