@@ -25,7 +25,7 @@ function Places() {
                 style={{
                   height: '100%',
                   width: '100%',
-                  background: i % 2 === 0 ? '#1117ff' : '#16176c'
+                  background: i % 2 === 0 ? '#1f1f31' : '#1d1d41'
                 }}
               >
               <Details 
