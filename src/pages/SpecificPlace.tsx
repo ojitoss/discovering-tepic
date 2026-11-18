@@ -1,11 +1,29 @@
 import { Link, useParams  } from 'react-router'
+import { useRef } from 'react'
 import { PLACES_INFO  } from '../../constants'
 import { GoogleMaps } from '../components/GoogleMaps'
 import { ShadowImgBg } from '../components/ShadwoImgBg'
 import './SpecificPlace.css'
 
+interface TimeStaps {
+  text: string
+  time: number
+}
+
+const TIME_STAPS: TimeStaps[] = [
+  {
+    text: 'Video start',
+    time: 3
+  },
+  {
+    text: 'See water',
+    time: 16
+  }
+]
+
 function SpecificPlace() {
   const { place } = useParams()
+  const videoRef = useRef(null)
 
   const place_ = PLACES_INFO.find(place_info => place_info.name === place)
 
@@ -19,9 +37,27 @@ function SpecificPlace() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center', justifyContent: 'center' }}>
             <video
+              ref={videoRef}
               controls
               src='https://lorem.video/720p' 
             ></video>
+
+            <ol>
+              {TIME_STAPS.map((time_stap, i)=> (
+                <li 
+                  key={i}
+                  onClick={()=> {
+                    if (videoRef) {
+                      videoRef.current.currentTime = time_stap.time
+                      videoRef.current.play()
+                    }
+                  }}
+                >
+                  {`00:${time_stap.time}`}
+                  {time_stap.text}
+                </li>
+              ))}
+            </ol>
 
             <GoogleMaps url={place_.google_maps_url} />
           </div>
