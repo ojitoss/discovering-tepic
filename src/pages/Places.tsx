@@ -17,8 +17,8 @@ function Places() {
         <div className='container'>
           {CATEGORY_FILTERS.map((category, i) => {
             const category_info = CATEGORIES_INFO[category]
-            const amount_places = CATEGORIES_INFO[category].amount_places
             const filtered_places = PLACES_INFO.filter(place => place.category === category)
+            const amount_places = filtered_places.length
 
             return (
               <div
