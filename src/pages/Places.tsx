@@ -17,8 +17,8 @@ function Places() {
         <div className='container'>
           {CATEGORY_FILTERS.map((category, i) => {
             const category_info = CATEGORIES_INFO[category]
-            const amount_members = category_info.places_info_indexes.length
-            const filtered_places = PLACES_INFO.filter((_, i)=> category_info.places_info_indexes.includes(i))
+            const amount_places = CATEGORIES_INFO[category].amount_places
+            const filtered_places = PLACES_INFO.filter(place => place.category === category)
 
             return (
               <div
@@ -29,12 +29,12 @@ function Places() {
                 }}
               >
               <Details 
-                title={<h3>{category} <span>({amount_members})</span>:</h3>}
+                title={<h3>{category} <span>({amount_places})</span>:</h3>}
               >
                 <span>{category_info.description}</span>
                 <div 
                   style={{
-                    gridTemplateColumns: `repeat(${amount_members}, 1fr)`,
+                    gridTemplateColumns: `repeat(${amount_places}, 1fr)`,
                   }}
                   className="places"
                 >

@@ -95,25 +95,25 @@ export const PLACES_INFO: PlaceInfo[] = [
 ]
 
 interface CategoryInfo {
-  places_info_indexes: number[]
+  amount_places: number
   description: string
 }
 
 export const CATEGORIES_INFO: Record<PlaceCategory, CategoryInfo> = {
   Locations: { 
-    places_info_indexes: [0, 3, 8, 12],
+    amount_places: 4,
     description: 'In Tepicyork we have many locations like the Centro'
   },
   Cerro: {
-    places_info_indexes: [1, 2],
+    amount_places: 2,
     description: 'In Tepicyork we have two mains Cerros that you can hike'
   },
   Laguna: {
-    places_info_indexes: [4, 7, 11],
+    amount_places: 3,
     description: 'In Tepicyork we have some water'
   },
   Museums: {
-    places_info_indexes: [5, 6, 9, 10],
+    amount_places: 4,
     description: 'In Tepicyork we have several museums at Centro'
   }
 }
