@@ -5,7 +5,13 @@ export type PlaceType =
   | 'Zitacua'
   | 'Laguna de Mora'
   | 'Cinco Pueblos Casa De Artesanias'
-  | 'Museo Regional de Nayarit'
+  | 'Casa Museo Juan Escutia'
+  | 'Arroyo "El Agua Azul"'
+  | 'La Loma'
+  | 'Ruinas de Jauja'
+  | 'Ciudad de Las Artes Indigenas'
+  | 'Bellavista'
+  | 'Parque Metropolitano'
 
 export type PlaceCategory = 
   'Locations'
