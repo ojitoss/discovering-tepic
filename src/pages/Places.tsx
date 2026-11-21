@@ -32,12 +32,7 @@ function Places() {
                 title={<h3>{category} <span>({amount_places})</span>:</h3>}
               >
                 <span>{category_info.description}</span>
-                <div 
-                  style={{
-                    gridTemplateColumns: `repeat(${amount_places}, 1fr)`,
-                  }}
-                  className="places"
-                >
+                <div className="places">
                   {filtered_places.map((place, i) => (
                     <ShadowImgBg src={place.main_image} height='100%' shadow={7}>
                       <Link
