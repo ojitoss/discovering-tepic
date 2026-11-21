@@ -26,6 +26,7 @@ function SpecificPlace() {
   const videoRef = useRef(null)
 
   const place_ = PLACES_INFO.find(place_info => place_info.name === place)
+  const linkVideo = `${import.meta.env.BASE_URL}/videos/${place_?.name}.mp4`
 
   return (
     <>
@@ -39,7 +40,7 @@ function SpecificPlace() {
             <video
               ref={videoRef}
               controls
-              src='https://lorem.video/720p' 
+              src={linkVideo}
             ></video>
 
             <ol>
