@@ -1,8 +1,10 @@
 import { HashRouter, Routes, Route, Link } from 'react-router'
-import { Img  } from './components/Img'
 import { useState } from 'react'
 import './App.css'
+import { getFullPath  } from './helper'
 import { NAV_BAR_SECTIONS } from '../constants'
+
+const TEPIC_LOGO = getFullPath('root', 'Tepic-logo.png')
 
 import Home from './pages/Home'
 import Places from './pages/Places'
@@ -15,7 +17,7 @@ function App() {
     <HashRouter>
       <nav>
         <Link to={'/'}>
-          <Img src='Tepic-logo.png' />
+          <img src={TEPIC_LOGO} />
         </Link>
 
         <div>
@@ -40,7 +42,7 @@ function App() {
       
       <footer>
         <div className='guide'>
-          <Img src='Tepic-logo.png' />
+          <img src={TEPIC_LOGO} />
           <div>
             <h5>Guide:</h5>
             <ul>

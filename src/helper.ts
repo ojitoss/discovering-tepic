@@ -9,11 +9,11 @@ export const getParsedTime = (time: number): `${string}:${string}` => {
   return `${parseNum(minutes)}:${parseNum(seconds)}`
 }
 
-export const getFullPath = (pathType: 'root' | 'videos')=> {
+export const getFullPath = (pathType: 'root' | 'videos', path: string)=> {
   const cases = {
     root: '',
     videos: 'videos/'
   }
 
-  return `${import.meta.env.BASE_URL}/${cases[pathType]}`
+  return `${import.meta.env.BASE_URL}/${cases[pathType]}${path}`
 }
