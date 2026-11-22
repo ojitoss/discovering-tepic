@@ -8,3 +8,12 @@ export const getParsedTime = (time: number): `${string}:${string}` => {
 
   return `${parseNum(minutes)}:${parseNum(seconds)}`
 }
+
+export const getFullPath = (pathType: 'root' | 'videos')=> {
+  const cases = {
+    root: '',
+    videos: 'videos/'
+  }
+
+  return `${import.meta.env.BASE_URL}/${cases[pathType]}`
+}
