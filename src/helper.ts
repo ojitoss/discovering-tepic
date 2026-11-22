@@ -1,6 +1,10 @@
-export const getParsedTime = (time: number): `0${number}:${number}` => {
+export const parseNum = (n: number) => {
+  return n > 10 ? `${n}` : `0${n}`
+}
+
+export const getParsedTime = (time: number): `${string}:${string}` => {
   const minutes = time /  60
   const seconds = time - (60 * minutes)
 
-  return `0${minutes}:${seconds}`
+  return `${parseNum(minutes)}:${parseNum(seconds)}`
 }
