@@ -14,6 +14,14 @@ function App() {
                 </h1>
             </ShadowImgBg>
 
+            <div>
+              <h2>What is Tepic?</h2>
+              <p>
+                <b>Tepic</b> is the capital of the state of <b>Nayarit</b>, that is a state of the country of <b>Mexico</b>
+                this municipe it have very interesnting and cultural places to visit
+             </p>
+            </div>
+
             <div className='tepic-map'>
                 <GoogleMaps url={TEPIC_URL} />
             </div>
