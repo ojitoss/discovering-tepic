@@ -26,7 +26,7 @@ function SpecificPlace() {
   const videoRef = useRef(null)
 
   const place_ = PLACES_INFO.find(place_info => place_info.name === place)
-  const linkVideo = `${import.meta.env.BASE_URL}/videos/${place_?.name}.mp4`
+  const linkVideo = `${import.meta.env.BASE_URL}/videos/${place_?.name.replaceAll(' ', '-')}.mp4`
 
   return (
     <>
