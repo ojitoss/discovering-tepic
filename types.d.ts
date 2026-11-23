@@ -10,6 +10,11 @@ export type PlaceType =
   | 'Ciudad de Las Artes Indigenas'
   | 'Bellavista'
   | 'Parque Metropolitano'
+  | 'Aeropuerto Interacional de Tepic'
+  | 'Escalinata Del Rodeo'
+  | 'Plaza Forum Tepic'
+  | 'Museo Regional de Nayarit'
+  | 'Parque Ecologico'
 
 export type PlaceCategory = 
   'Locations'

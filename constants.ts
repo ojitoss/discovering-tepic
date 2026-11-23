@@ -80,6 +80,36 @@ export const PLACES_INFO: PlaceInfo[] = [
     google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7421.216150841894!2d-104.88765486121672!3d21.562174970895782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842748282e36474f%3A0x7f31c211c57260ef!2s63501%20Bellavista%2C%20Nay.!5e0!3m2!1ses-419!2smx!4v1794979518164!5m2!1ses-419!2smx',
     main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLe4y7E5vXPmmLELIOPV6_3wTHMIpQ3eiRMj2XG98Z7m8FKGZQ7TPb1caCjKytVdCFV6br0shn8H-HhC40sYKPn4uzC0M3i1LA1b3AqFK8tozFjmu0bmIE9axyGdv7R2S11GUCr3hQ=w408-h306-k-no',
   },
+  {
+    name: 'Aeropuerto Interacional de Tepic',
+    category: 'Locations',
+    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771169.1211174764!2d-108.03213314953655!3d22.62460160786119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842736e4ee327925%3A0x6b568feb3b2a00a7!2sAeropuerto%20Internacional%20de%20Tepic!5e0!3m2!1ses-419!2smx!4v1795412358245!5m2!1ses-419!2sm',
+    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLe4dTX4c7-0_a8aMDpMJpFsf2mZKPuZk77ANfUzU2aPN93gde1l3WtvKq9rk3ybtmz_8PVG0JmX-46vorsr6gpPOJ6aMbmm8LoryZarXpyDeWShX1l0ueDTLmv96D-zR_sJgsH6=w408-h408-k-no',
+  },
+  {
+    name: 'Escalinata Del Rodeo',
+    category: 'Locations',
+    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.543910633614!2d-104.91823702563232!3d21.525577580251273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8427373c2ebfe59b%3A0x7cb1aa2378b0b3f8!2sEscalinata%20Del%20Rodeo!5e0!3m2!1ses-419!2smx!4v1795412487275!5m2!1ses-419!2smx',
+    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLdi42dgvfrVhhKbT3XH4mFsVp6XDh7ijGZe0EygIq5Q34x9kX08naWbkGHMaZLf5I78OJcbRiVdwxlRqZ5HJrbEfztLr1qyAFRYMHh5AiDRN20Xha8pgdppgtp0ORdrEO1Zdgc=w408-h546-k-no',
+  },
+  {
+    name: 'Plaza Forum Tepic',
+    category: 'Locations',
+    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59384.704645153855!2d-104.95686210707379!3d21.525572504460115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8427374050000001%3A0x5d6ee4d2367ebf60!2sPlaza%20Forum%20Tepic!5e0!3m2!1ses-419!2smx!4v1795412593214!5m2!1ses-419!2smx',
+    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLdC-jiYVow36Y0RDlRQaSQYj6PwK_eKBuQoXfB6SpSEbBliZ2xGm-ZRmKkRxLO8576T-GODP-UD4hIe0WcMFh4kVqx_uEcaHfgRPmdevqz5L6W_nE3bkh1fOvs36RlVRoBm_EFL7J-zW4uI=w408-h306-k-no',
+  },
+  {
+    name: 'Museo Regional de Nayarit',
+    category: 'Museums',
+    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.9403065272218!2d-104.89509062563253!3d21.51005798026254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842736e393bd8f97%3A0xb100d741039c119e!2sMuseo%20Regional%20de%20Nayarit!5e0!3m2!1ses-419!2smx!4v1795412828037!5m2!1ses-419!2smx',
+    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLff0eLz5v86FevT5x875Xzwtkc5UvTLRIRFUHKywVPvf_PzZAm102n_CMIdl8WiCk2yeBl4UKdSSkWP-EnOK0RI9kX_vokGRCUJI7zDiTu1hAxb5l62-ll6FjkpeiJfmUK2-Ods=w408-h306-k-no',
+  },
+  {
+    name: 'Parque Ecologico',
+    category: 'Locations',
+    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14850.47445306886!2d-104.8594495!3d21.483476299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273745638e2417%3A0xf0e3c1ce96812331!2sParque%20Ecol%C3%B3gico%2C%20Tepic%2C%20Nay.!5e0!3m2!1ses-419!2smx!4v1795413085265!5m2!1ses-419!2smx',
+    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLdB7r9bX-ZHtfFVU3byZC1OpK-yV4mHN0OKfLAE_P5p0dHRFSHUTb7ohxwFyH5-XRVo9Ei9v4ZZNvTPkR6TY2S66GxPTnNePmFJIfA3PQBPRKSrL3XHN2PBBROJtiNbtTtXlOk=w408-h544-k-no'
+  }
 ]
 
 interface CategoryInfo {
