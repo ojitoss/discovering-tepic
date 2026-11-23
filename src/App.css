@@ -90,11 +90,6 @@ footer {
   footer {
     .guide {
       flex-direction: column;
-
-      img {
-        height: 150px;
-        width: 300px;
-      }
     }
   }
 }
