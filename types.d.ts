@@ -6,7 +6,6 @@ export type PlaceType =
   | 'Laguna de Mora'
   | 'Cinco Pueblos Casa De Artesanias'
   | 'Casa Museo Juan Escutia'
-  | 'Arroyo "El Agua Azul"'
   | 'La Loma'
   | 'Ruinas de Jauja'
   | 'Ciudad de Las Artes Indigenas'

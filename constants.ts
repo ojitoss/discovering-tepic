@@ -57,12 +57,6 @@ export const PLACES_INFO: PlaceInfo[] = [
     main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLd1Jt9HdvNBY8nBdoiMJJx9jutUyJFpjtfHuTS7ZKab9xKXtsQfKKspADFBctiyPqcbV3Kyc4g7o5KgKBXCoSstZw5PkKg2nBMKMsD2ZERX0PI9eweWgkygx0AGmmdnRgzd015kXw=w408-h306-k-no'
   },
   {
-    name: 'Arroyo "El Agua Azul"',
-    category: 'Laguna',
-    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.4653096856955!2d-104.80815982563206!3d21.5286536802488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842739007507b0b3%3A0x87d341fc2fc34e0a!2zQXJyb3lvIOKAnEVsIEFndWEgQXp1bOKAnQ!5e0!3m2!1ses-419!2smx!4v1794978012881!5m2!1ses-419!2smx',
-    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLdE5dB_eXVAPsDwrgOlYyk0tucjwg7T8_joacUKGmtGcHGk7PTLNRjKnHOLLwfwAGnk-7_VUwzJISHoUjJhXbhWC-iimKWVoqOof7ixDRtPsk9k9HzaH7CpW1W6_kJiiLGXemjRhg=w408-h528-k-no'
-  },
-  {
     name: 'La Loma',
     category: 'Locations',
     google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.097584064638!2d-104.90711722563259!3d21.503897330266636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842736f089b458f5%3A0xe4fb7d1660adf018!2sLa%20Loma%2C%20Tepic%2C%20Nay.!5e0!3m2!1ses-419!2smx!4v1794978503723!5m2!1ses-419!2smx',
