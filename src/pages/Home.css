@@ -1,5 +1,33 @@
 .tepic-map {
   display: flex;
+  flex-direction: column;
+  background: #1f1f31;
+  padding: 10px;
   justify-content: center;
   align-items: center;
+
+  h3 {
+    font-size: 35px;
+    color: #d3d3d3;
+  }
+}
+
+.whats-tepic {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  background: #1f1f31;
+  padding: 10px;
+
+  h2 {
+    margin-left: 15px;
+    font-size: 40px;
+  }
+
+  p {
+    margin-left: 15px;
+    font-size: 20px;
+  }
 }
