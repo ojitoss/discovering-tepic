@@ -9,7 +9,7 @@ import { getParsedTime  } from '../helper'
 export const TimeStap: React.FC<Props> = ({ time, text, videoRef  })=> {
   const handleClik = ()=> {
     if (videoRef) {
-      videoRef.current.time = time
+      videoRef.current.currentTime = time
       videoRef.current.play()
     }
   }

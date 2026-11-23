@@ -3,7 +3,7 @@ export const parseNum = (n: number) => {
 }
 
 export const getParsedTime = (time: number): `${string}:${string}` => {
-  const minutes = time /  60
+  const minutes = Math.trunc(time /  60)
   const seconds = time - (60 * minutes)
 
   return `${parseNum(minutes)}:${parseNum(seconds)}`
