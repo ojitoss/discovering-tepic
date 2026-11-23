@@ -59,3 +59,16 @@ h1 {
     }
   }
 }
+
+@media (max-width: 480px) {
+  .places {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .place {
+    min-width: 100px;
+    min-height: 200px;
+    max-width: 100px;
+    max-height: 200px;
+  }
+}
