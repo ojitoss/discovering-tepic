@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import { PLACES_INFO  } from '../../constants'
 import { GoogleMaps } from '../components/GoogleMaps'
 import { ShadowImgBg } from '../components/ShadwoImgBg'
+import { TimeStap  } from '../components/TimeStap'
 import './SpecificPlace.css'
 
 interface TimeStaps {
@@ -45,17 +46,8 @@ function SpecificPlace() {
 
             <ol>
               {TIME_STAPS.map((time_stap, i)=> (
-                <li 
-                  key={i}
-                  onClick={()=> {
-                    if (videoRef) {
-                      videoRef.current.currentTime = time_stap.time
-                      videoRef.current.play()
-                    }
-                  }}
-                >
-                  {`00:${time_stap.time}`}
-                  {time_stap.text}
+                <li key={i}>
+                  <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
                 </li>
               ))}
             </ol>
