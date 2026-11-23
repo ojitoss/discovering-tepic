@@ -1,6 +1,5 @@
 export type PlaceType =
-  'Centro'
-  | 'Cerro de La Cruz'
+  'Cerro de La Cruz'
   | 'Cerro de San Juan'
   | 'Zitacua'
   | 'Laguna de Mora'
