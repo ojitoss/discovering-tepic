@@ -31,3 +31,39 @@
     font-size: 20px;
   }
 }
+
+.places-to-visit {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  background: #1d1d41;
+  padding: 10px;
+  
+  h2 {
+    margin-left: 15px;
+    font-size: 40px;
+  }
+
+  p {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #4c4caf;
+  }
+
+  .btn {
+    margin-left: 15px;
+    text-decoration: none;
+    background: #565ba0;
+    color: #d3d3d3;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 40px;
+  }
+}
