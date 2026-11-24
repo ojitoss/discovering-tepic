@@ -16,10 +16,10 @@ export type PlaceType =
   | 'Parque Ecologico'
 
 export type PlaceCategory = 
-  'Locations'
-  | 'Cerro'
-  | 'Laguna'
-  | 'Museums'
+  'Fun Places'
+  | 'Hills'
+  | 'History'
+  | 'Ubanized'
 
 export interface PlaceInfo {
   name: PlaceType

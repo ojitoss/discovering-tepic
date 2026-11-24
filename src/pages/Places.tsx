@@ -5,7 +5,7 @@ import { ShadowImgBg } from '../components/ShadwoImgBg'
 import { Details } from '../components/Details'
 import './Places.css'
 
-const CATEGORY_FILTERS: PlaceCategory[] = ['Locations', 'Cerro', 'Laguna', 'Museums']
+const CATEGORY_FILTERS: PlaceCategory[] = ['Ubanized', 'Fun Places', 'History', 'Hills']
 
 function Places() {
   return (
