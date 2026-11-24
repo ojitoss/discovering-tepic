@@ -4,6 +4,7 @@ import { PLACES_INFO  } from '../../constants'
 import { GoogleMaps } from '../components/GoogleMaps'
 import { ShadowImgBg } from '../components/ShadwoImgBg'
 import { TimeStap  } from '../components/TimeStap'
+import { Details } from '../components/Details'
 import './SpecificPlace.css'
 
 interface TimeStaps {
@@ -44,16 +45,20 @@ function SpecificPlace() {
               src={linkVideo}
             ></video>
 
-            <ol>
-              <li>
-                <TimeStap time={0} text='Restart video' videoRef={videoRef} />
-              </li>
-              {TIME_STAPS.map((time_stap, i)=> (
-                <li key={i}>
-                  <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
+            <Details
+              title={<h2>Time Staps:</h2>}
+            >
+              <ol className='time-staps'>
+                <li>
+                  <TimeStap time={0} text='Start of the video' videoRef={videoRef} />
                 </li>
-              ))}
-            </ol>
+                {TIME_STAPS.map((time_stap, i)=> (
+                  <li key={i}>
+                    <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
+                  </li>
+                ))}
+              </ol>
+            </Details>
 
             <GoogleMaps url={place_.google_maps_url} />
           </div>
