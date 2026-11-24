@@ -27,10 +27,17 @@ export interface PlaceInfo {
   google_maps_url: string
   main_image: string
   time_staps?: TimeStaps[]
-  tiktok_id: number
+  tiktok_id: number,
+  reviews?: Review[]
 }
 
 export interface TimeStaps {
   text: string
   time: number
+}
+
+export interface Review {
+  username: string,
+  origin_msg: string,
+  translated_msg: string
 }

@@ -5,6 +5,7 @@ import { GoogleMaps } from '../components/GoogleMaps'
 import { ShadowImgBg } from '../components/ShadwoImgBg'
 import { TimeStap  } from '../components/TimeStap'
 import { Details } from '../components/Details'
+import { Review } from '../components/Review'
 import { type TimeStaps } from '../../types.d'
 import './SpecificPlace.css'
 
@@ -65,16 +66,25 @@ function SpecificPlace() {
                 </ol>
               </Details>
             </div>
-            
+
             <div className='reviews-section'>
               <Details
-                title={<h2>Reviews of "{place_.name}"</h2>}
+                title={<h2>Reviews of "{place_.name}" ({place_.reviews?.length ?? 0})</h2>}
               >
                 <p>
                   All reviews of this place (all of theses are in comments of uor Tik Tok page
                   you can visit the real tiktok video 
                    <a href={`https://www.tiktok.com/@discoveringtepic/video/${place_.tiktok_id}`}>here</a>)
                 </p>
+                <div className='reviews'>
+                  {
+                    place_.reviews?.length != undefined
+                    ? place_.reviews.map((review, i)=> (
+                      <Review key={i} review={review} />
+                    ))
+                    : <p>This place already have not a any review. Wait to the people make a review</p>
+                  }
+                </div>
               </Details>
             </div>
 

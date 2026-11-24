@@ -276,7 +276,19 @@ export const PLACES_INFO: PlaceInfo[] = [
         time: 19
       }
     ],
-    tiktok_id: 7711137771133488405
+    tiktok_id: 7711137771133488405,
+    reviews: [
+      {
+        username: 'daisy_lay_',
+        origin_msg: 'Buen video, good job! 🫰',
+        translated_msg: 'Good video, good job! 🫰'
+      },
+      {
+        username: 'el_menorcito085',
+        origin_msg: 'me gustaría ir se ve padre',
+        translated_msg: 'me gustaría ir se ve padre'
+      }
+    ]
   },
   {
     name: 'Escalinata Del Rodeo',
