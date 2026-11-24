@@ -25,5 +25,11 @@ export interface PlaceInfo {
   name: PlaceType
   category: PlaceCategory
   google_maps_url: string
-  main_image: string
+  main_image: string,
+  time_staps?: TimeStaps[]
+}
+
+export interface TimeStaps {
+  text: string
+  time: number
 }

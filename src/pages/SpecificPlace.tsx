@@ -5,12 +5,8 @@ import { GoogleMaps } from '../components/GoogleMaps'
 import { ShadowImgBg } from '../components/ShadwoImgBg'
 import { TimeStap  } from '../components/TimeStap'
 import { Details } from '../components/Details'
+import { type TimeStaps } from '../../types.d'
 import './SpecificPlace.css'
-
-interface TimeStaps {
-  text: string
-  time: number
-}
 
 const TIME_STAPS: TimeStaps[] = [
   {
@@ -29,6 +25,8 @@ function SpecificPlace() {
 
   const place_ = PLACES_INFO.find(place_info => place_info.name === place)
   const linkVideo = `${import.meta.env.BASE_URL}/videos/${place_?.name.replaceAll(' ', '-')}.mp4`
+
+  const time_staps = place_?.time_staps ?? TIME_STAPS
 
   return (
     <>
@@ -59,7 +57,7 @@ function SpecificPlace() {
                   <li>
                     <TimeStap time={0} text='Start of the video' videoRef={videoRef} />
                   </li>
-                  {TIME_STAPS.map((time_stap, i)=> (
+                  {time_staps.map((time_stap, i)=> (
                     <li key={i}>
                       <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
                     </li>
