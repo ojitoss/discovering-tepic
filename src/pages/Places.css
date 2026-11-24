@@ -45,6 +45,7 @@ h1 {
   max-height: 300px;
   padding: 16px;
   gap: 40px;
+  line-height: 23px;
 
   button {
     background: #3e6a9c;
