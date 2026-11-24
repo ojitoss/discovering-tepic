@@ -11,7 +11,7 @@ function Places() {
   return (
       <>
         <ShadowImgBg src='https://th.bing.com/th/id/R.3a61fec27ce00955a67457dfc626c9cf?rik=WmiqnbCuay2XWA&pid=ImgRaw&r=0'>
-          <h1>Places to visit in Tepicyork</h1>
+          <h1>Places to visit in Tepic</h1>
         </ShadowImgBg>
 
         <div className='container'>
@@ -28,26 +28,26 @@ function Places() {
                   background: i % 2 === 0 ? '#1f1f31' : '#1d1d41'
                 }}
               >
-              <Details 
-                title={<h3>{category} <span>({amount_places})</span>:</h3>}
-              >
-                <span>{category_info.description}</span>
-                <div className="places">
-                  {filtered_places.map((place, i) => (
-                    <ShadowImgBg src={place.main_image} height='100%' shadow={7}>
-                      <Link
-                        to={`/place/${place.name}`}
-                        className='place'
-                        key={i} 
-                      >
-                        {place.name}
+                <Details 
+                  title={<h3>{category} <span>({amount_places})</span>:</h3>}
+                >
+                  <span>{category_info.description}</span>
+                  <div className="places">
+                    {filtered_places.map((place, i) => (
+                      <ShadowImgBg src={place.main_image} height='100%' shadow={7}>
+                        <Link
+                          to={`/place/${place.name}`}
+                          className='place'
+                          key={i} 
+                        >
+                          "{place.name}"
 
-                        <button>See more</button>
-                      </Link>
-                    </ShadowImgBg>
-                  ))}
-                </div>
-              </Details>
+                          <button>See more</button>
+                        </Link>
+                      </ShadowImgBg>
+                    ))}
+                  </div>
+                </Details>
               </div>
           )})}
         </div>

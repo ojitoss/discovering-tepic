@@ -35,7 +35,7 @@ function SpecificPlace() {
       {place_ !== undefined ?
         <>
           <ShadowImgBg src={place_.main_image}>
-            <h1>{place_.name}</h1>
+            <h1>"{place_.name}"</h1>
           </ShadowImgBg>
 
           <div className='container'>
