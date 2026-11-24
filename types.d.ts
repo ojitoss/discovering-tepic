@@ -9,7 +9,6 @@ export type PlaceType =
   | 'Ruinas de Jauja'
   | 'Ciudad de Las Artes Indigenas'
   | 'Bellavista'
-  | 'Parque Metropolitano'
   | 'Aeropuerto Interacional de Tepic'
   | 'Escalinata Del Rodeo'
   | 'Plaza Forum Tepic'

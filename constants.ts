@@ -69,12 +69,6 @@ export const PLACES_INFO: PlaceInfo[] = [
     main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLdzzgy8QmE2Tifz640KVuFGLkY8N0d9hfZIJU6lYC_svTdrEFiaEtXWMXPzkRXPwurBpLkpDM6CeNQJaUQ7yEB9RCI_m1QqUxjke5Xcnc4620w0daQyhk-oUDNL6ktivcCnjiKxJa6Fyoc=w408-h510-k-no'
   },
   {
-    name: 'Parque Metropolitano',
-    category: 'Laguna',
-    google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0878980785424!2d-104.86088862990863!3d21.490678492240793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842737437339cacf%3A0xd927c2c02b2b3161!2sParque%20Metropolitano!5e0!3m2!1ses-419!2smx!4v1794979359017!5m2!1ses-419!2smx',
-    main_image: 'https://lh3.googleusercontent.com/grass-cs/AABkmLcOfO2dyHeEAnGBqbtj_yARAXsWwFhMhJGSqiRzna2nqyWzgMuwnZE5Xra0NgD-8IU-5mG4WXk5PddIrUKoEIH2tw-0Xsiag1JIkUcgnquI9LGSCNm902VnRh4ulmbydZIM7pwJ=w408-h544-k-no'
-  },
-  {
     name: 'Bellavista',
     category: 'Locations',
     google_maps_url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7421.216150841894!2d-104.88765486121672!3d21.562174970895782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842748282e36474f%3A0x7f31c211c57260ef!2s63501%20Bellavista%2C%20Nay.!5e0!3m2!1ses-419!2smx!4v1794979518164!5m2!1ses-419!2smx',
