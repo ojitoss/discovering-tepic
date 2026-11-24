@@ -59,7 +59,12 @@ video {
   width: 100%;
 }
 
-.map-section {
+.reviews-section {
   background: #1d1d41;
+  width: 100%;
+}
+
+.map-section {
+  background: #1f1f31;
   width: 100%;
 }

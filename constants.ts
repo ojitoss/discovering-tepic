@@ -32,7 +32,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Where is located',
         time: 25
       }
-    ]
+    ],
+    tiktok_id: 7711147026053942548
   },
   {
     name: 'Cerro de San Juan',
@@ -49,7 +50,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Where is located',
         time: 10
       }
-    ]
+    ],
+    tiktok_id: 7711139942130339092
   },
   {
     name: 'Zitacua',
@@ -73,7 +75,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'What is the "Mirador"',
         time: 26
       }
-    ]
+    ],
+    tiktok_id: 7711146914292485397
   },
   {
     name: 'Laguna de Mora',
@@ -93,7 +96,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'The best part of the place',
         time: 20
       }
-    ]
+    ],
+    tiktok_id: 7711143798054767924
   },
   {
     name: 'Casa Museo Juan Escutia',
@@ -113,7 +117,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Main atraction of the place',
         time: 20
       }
-    ]
+    ],
+    tiktok_id: 7711145269068401941
   },
   {
     name: 'Cinco Pueblos Casa De Artesanias',
@@ -141,7 +146,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Videos and images of the place',
         time: 65
       }
-    ]
+    ],
+    tiktok_id: 7711146765038144788
   },
   {
     name: 'La Loma',
@@ -165,7 +171,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Recomendation of this place',
         time: 50
       }
-    ]
+    ],
+    tiktok_id: 7711146175398710549
   },
   {
     name: 'Ruinas de Jauja',
@@ -193,7 +200,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Why is important now',
         time: 105
       }
-    ]
+    ],
+    tiktok_id: 7711146552303177012
   },
   {
     name: 'Ciudad de Las Artes Indigenas',
@@ -221,7 +229,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Horary of the place',
         time: 67
       }
-    ]
+    ],
+    tiktok_id: 7711140740927081748
   },
   {
     name: 'Bellavista',
@@ -245,7 +254,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Views of architecture of the place',
         time: 28
       }
-    ]
+    ],
+    tiktok_id: 7711139354520947988
   },
   {
     name: 'Aeropuerto Interacional de Tepic',
@@ -265,7 +275,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'International places that we can visit from the airport',
         time: 19
       }
-    ]
+    ],
+    tiktok_id: 7711137771133488405
   },
   {
     name: 'Escalinata Del Rodeo',
@@ -281,7 +292,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'What is the main atraction of the place',
         time: 4
       }
-    ]
+    ],
+    tiktok_id: 7711142491147341077
   },
   {
     name: 'Plaza Forum Tepic',
@@ -305,7 +317,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Main restaurants isnide it',
         time: 40
       }
-    ]
+    ],
+    tiktok_id: 7711143636125158677
   },
   {
     name: 'Museo Regional de Nayarit',
@@ -325,7 +338,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'What is dedicated to show',
         time: 20
       }
-    ]
+    ],
+    tiktok_id: 7711145483497917716
   },
   {
     name: 'Parque Ecologico',
@@ -341,7 +355,8 @@ export const PLACES_INFO: PlaceInfo[] = [
         text: 'Where is located',
         time: 8
       }
-    ]
+    ],
+    tiktok_id: 7711145730961837333
   }
 ]
 

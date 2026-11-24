@@ -65,6 +65,18 @@ function SpecificPlace() {
                 </ol>
               </Details>
             </div>
+            
+            <div className='reviews-section'>
+              <Details
+                title={<h2>Reviews of "{place_.name}"</h2>}
+              >
+                <p>
+                  All reviews of this place (all of theses are in comments of uor Tik Tok page
+                  you can visit the real tiktok video 
+                   <a href={`https://www.tiktok.com/@discoveringtepic/video/${place_.tiktok_id}`}>here</a>)
+                </p>
+              </Details>
+            </div>
 
             <div className='map-section'>
               <Details
@@ -73,6 +85,7 @@ function SpecificPlace() {
                 <GoogleMaps url={place_.google_maps_url} />
               </Details>
             </div>
+
           </div>
         </>
         : <div className='invalid-place'>
