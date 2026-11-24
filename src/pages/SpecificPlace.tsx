@@ -45,6 +45,9 @@ function SpecificPlace() {
             ></video>
 
             <ol>
+              <li>
+                <TimeStap time={0} text='Restart video' videoRef={videoRef} />
+              </li>
               {TIME_STAPS.map((time_stap, i)=> (
                 <li key={i}>
                   <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
