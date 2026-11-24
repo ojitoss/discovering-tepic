@@ -8,8 +8,12 @@ interface Props {
 export const Details: React.FC<Props> = ({ title, children })=> {
     const [show, setShow] = useState(true)
 
+    const habdleClick = ()=> {
+      setShow(show => !show)
+    }
+
     return (
-        <div onClick={()=> setShow(show => !show)}>
+        <div>
           <div
             style={{
               position: 'relative'
@@ -23,9 +27,9 @@ export const Details: React.FC<Props> = ({ title, children })=> {
                 color: '#f4f4f4'
               }}
             >
-              {show ? '>' : 'v'}
+              <span onClick={habdleClick}>{show ? '>' : 'v'}</span>
             </div>
-            {title}
+            <span onClick={habdleClick}>{title}</span>
           </div>
 
           {show 
