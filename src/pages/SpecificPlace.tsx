@@ -38,29 +38,43 @@ function SpecificPlace() {
             <h1>{place_.name}</h1>
           </ShadowImgBg>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'center', justifyContent: 'center' }}>
-            <video
-              ref={videoRef}
-              controls
-              src={linkVideo}
-            ></video>
+          <div className='container'>
+            <div className='video-section'>
+              <Details
+                title={<h2>Video of the place "{place_.name}":</h2>}
+              >
+                <video
+                  ref={videoRef}
+                  controls
+                  src={linkVideo}
+                ></video>
+              </Details>
+            </div>
 
-            <Details
-              title={<h2>Time Staps:</h2>}
-            >
-              <ol className='time-staps'>
-                <li>
-                  <TimeStap time={0} text='Start of the video' videoRef={videoRef} />
-                </li>
-                {TIME_STAPS.map((time_stap, i)=> (
-                  <li key={i}>
-                    <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
+            <div className='time-staps-section'>
+              <Details
+                title={<h2>Time Staps:</h2>}
+              >
+                <ol className='time-staps'>
+                  <li>
+                    <TimeStap time={0} text='Start of the video' videoRef={videoRef} />
                   </li>
-                ))}
-              </ol>
-            </Details>
+                  {TIME_STAPS.map((time_stap, i)=> (
+                    <li key={i}>
+                      <TimeStap time={time_stap.time} text={time_stap.text} videoRef={videoRef} />
+                    </li>
+                  ))}
+                </ol>
+              </Details>
+            </div>
 
-            <GoogleMaps url={place_.google_maps_url} />
+            <div className='map-section'>
+              <Details
+                title={<h2>Exact ubication of "{place_.name}":</h2>}
+              >
+                <GoogleMaps url={place_.google_maps_url} />
+              </Details>
+            </div>
           </div>
         </>
         : <div className='invalid-place'>

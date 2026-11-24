@@ -3,6 +3,19 @@ video {
   height: 360;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 35px;
+    font-width: bold;
+  }
+}
+
 .invalid-place {
   font-size: 40px;
 
@@ -27,4 +40,19 @@ video {
       border: 2px solid #3361c4;
     }
   }
+}
+
+.video-section {
+  background: #1d1d41;
+  width: 100%;
+}
+
+.time-staps-section {
+  background: #1f1f31;
+  width: 100%;
+}
+
+.map-section {
+  background: #1d1d41;
+  width: 100%;
 }
