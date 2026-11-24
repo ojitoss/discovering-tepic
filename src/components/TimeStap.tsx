@@ -6,6 +6,8 @@ interface Props {
 
 import { getParsedTime  } from '../helper'
 
+import './TImeStap.css'
+
 export const TimeStap: React.FC<Props> = ({ time, text, videoRef  })=> {
   const handleClik = ()=> {
     if (videoRef) {
